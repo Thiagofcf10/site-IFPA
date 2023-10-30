@@ -13,7 +13,7 @@
         padding: 0;
         height: 100vh;
         width: 100vw;
-        
+
 
     }
 
@@ -38,31 +38,46 @@
     .titulo img {
         height: 130px;
         width: 150px;
+        margin-right: 20px;
 
     }
 
     .menus {
-        background-color: rgb(24, 168, 43);
+        background-color: #003C00;
 
     }
 
-    .menus a {
+    .menus li {
         font-size: 40px;
-        padding-block: 4% 2%;
-        padding-top: 2%;
+        padding: 15px;
         color: white;
         font-family: Arial;
         border-radius: 10px;
         text-decoration: none;
         text-wrap: nowrap;
         font-weight: bold;
-        margin-right: 35px;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .menus a {
+        font-size: 40px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        color: rgb(0, 70, 31);
+        font-family: Arial;
+        border-radius: 10px;
+        text-decoration: none;
+        text-wrap: nowrap;
+        font-weight: bold;
+
 
     }
 
     .menus a:hover {
-        background-color: rgb(65, 35, 175);
-        color: aliceblue;
+        color: rgb(0, 129, 241);
 
 
     }
@@ -70,24 +85,79 @@
     .menus ul {
         margin-top: 0%;
         display: flex;
-        justify-content: space-between;
         list-style-type: none;
         padding-top: 0.5%;
         padding-bottom: 0.5%;
-        margin-inline: auto;
-        max-inline-size: 68%;
-        margin-bottom: 0;
+        margin-left: 18vmax;
+
 
     }
 
-    #tela {
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 80vh;
-        padding-left: 91vw;
-        border: 10px red solid;
+    @media screen and (max-width: 1950px) {
+        body {
+            width: 100%;
+            background-color: #ff6c47;
 
+        }
+
+        .titulo {
+            padding-bottom: 1%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            background-color: #003C00;
+
+        }
+
+        .titulo h1 {
+            text-align: center;
+            margin-left: 30px;
+
+        }
+
+        .menus li {
+            font-size: 40px;
+            padding: 10px;
+            color: white;
+            font-family: Arial;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 5vw;
+            margin-left: 5vw;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+
+
+        }
+
+        .menus a {
+            font-size: 30px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            color: rgb(0, 70, 31);
+            font-family: Arial;
+            border-radius: 10px;
+            text-decoration: none;
+            text-wrap: nowrap;
+            font-weight: bold;
+
+
+        }
+
+        .menus ul {
+            margin-top: 0%;
+            display: block;
+            list-style-type: none;
+            padding-top: 1.5%;
+            padding-bottom: 1.5%;
+            margin-left: 4vmax;
+            margin-right: 4vmax;
+
+
+        }
     }
 </style>
 
@@ -97,22 +167,22 @@
             <img src="imagens/ifpaoficial.jpg">
             <hi>Projetos academicos IFPA</hi>
         </div>
-            <div class="menus">
-                <nav>
-                    <ul>
-                        <li id="integradores" onclick="">
-                            <a href=""> Projetos integradores </a>
-                        </li>
-                        <li id="extensao" onclick="">
-                            <a href=""> Projetos de extensão</a>
-                        </li>
-                        <li id="conclusao" onclick="">
-                            <a href=""> Trabalho de conclusão de curso </a>
-                        </li>
+        <div class="menus">
+            <nav>
+                <ul>
+                    <li id="integradores">
+                        <a href=""> Projetos integradores </a>
+                    </li>
+                    <li id="extensao">
+                        <a href=""> Projetos de extensão</a>
+                    </li>
+                    <li id="conclusao">
+                        <a href=""> Trabalho de conclusão de curso </a>
+                    </li>
 
-                    </ul>
-                </nav>
-            </div>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 

@@ -1,8 +1,6 @@
 const supabaseUrl = 'https://eklotjekflmuuqycnqnz.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVrbG90amVrZmxtdXVxeWNucW56Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTczMzkxNjQsImV4cCI6MjAxMjkxNTE2NH0._WkAqYcJHdpBj0S-pgCreX9KvCxClKQc233t6qHIiOU'
 const _supabase = supabase.createClient(supabaseUrl, supabaseKey)
-//const ul = document.createElement('ul');
-//const li = document.createElement('li');
 
 
 const lista = document.querySelector('#lista');
@@ -33,7 +31,6 @@ function listagem(listaU) {
       margin: 0px;
       margin-bottom: 15px;
       margin-right: 20px;
-      margin-left: 40px;
       border-radius: 15px;
       
   }

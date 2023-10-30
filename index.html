@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta nome="viewport" content="width=devide-width, initial-scale=1.0, maximun-scale=1.0">
     <title>IFPA repositorios</title>
-    <link rel="estilo" href="estilo.css" >
+    <link rel="estilo" href="estilo.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 
@@ -14,43 +14,31 @@
 <style src="estilo.css">
     body {
         background-color: rgb(255, 255, 255);
-        margin: 0%;
-        padding: 0%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
 
+    .titulo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #003C00;
+        padding-bottom: 20px;
+        padding-top: 40px;
+        text-align: center;
     }
 
     .titulo h1 {
         text-align: center;
-        background-color: green;
-        border-radius: 10px;
-    }
-
-    button {
-        position: relative;
-        height: 80px;
-        width: auto;
-        border-radius: 10px;
-        background-color: rgb(65, 35, 175);
+        font-size: 45px;
         color: aliceblue;
-        width: 250px;
-        margin-top: 4%;
 
-    }
 
-    .titulo {
-        padding: auto;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 250%;
-        color: aliceblue;
-        text-align: center;
-        background-color: #003C00;
-        border-radius: 0px;
-        padding-bottom: 1%;
     }
 
     .titulo img {
-        height: 130px;
-        width: 150px;
+        height: 180px;
+        width: 210px;
 
     }
 
@@ -59,66 +47,62 @@
 
     }
 
+    .menus img {
+        height: 100px;
+        width: 100px;
+
+    }
+
     .menus a {
         font-size: 110%;
-        padding: 7%;
-        margin: auto;
         color: rgb(23, 6, 83);
         font-family: Arial;
-        background-color: rgb(255, 255, 255);
-        border-radius: 5px;
         text-decoration: none;
         text-wrap: nowrap;
         font-weight: bold;
+        padding-right: 5px;
+        padding-top: 100px;
+        padding-bottom: 20px;
+
 
     }
 
     .menus a:hover {
+        color: aliceblue;
+
+    }
+
+    .menus li {
+        padding: 20px;
+        color: rgb(23, 6, 83);
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-left: 2vw;
+
+    }
+
+    .menus li:hover {
         background-color: rgb(65, 35, 175);
         color: aliceblue;
 
     }
 
     .menus ul {
-        margin-top: 0%;
+        margin-top: 0;
+        padding-top: 20px;
         display: flex;
-        justify-content: space-between;
         list-style-type: none;
-        margin-left: 15%;
-        margin-right: 15%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        margin-inline: auto;
-        max-inline-size: 60%;
-        min-inline-size: 40%;
+        padding-bottom: 20px;
+        margin-left: 8vw;
 
 
-    }
-
-    .filtros {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 110%;
-        color: #003C00;
-        line-height: 40px;
-        width: 100%;
-        text-align:right;
-        padding: 1%;
-        display: block;
     }
 
     .corpo {
-        padding: 5%;
-        padding-right: 20%;
-        padding-top: 0.5%;
         text-wrap: nowrap;
 
     }
 
-    .MT li {
-        background-color: #003C00;
-        height: 10px;
-        width: 50px;
-    }
     .filtros label {
         margin-right: 1%;
     }
@@ -126,37 +110,111 @@
     .filtros input {
         background-color: azure;
         border-radius: 9px;
-        padding: 0.4%;
-        border: 3px solid #003C00;
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 160px;
+        border: 3px solid #03c203;
         font-family: Arial, Helvetica, sans-serif;
-        padding-right: 49%;
-        padding-left: 1% ;
-
-        
+        padding-left: 10px;
+        margin-left: 14vw;
+        font-size: 100%;
     }
 
-    .filtros select {
-        background-color: azure;
-        border-radius: 9px;
-        padding: 0.4%;
-        padding-right:47.5%;
-        border: 3px solid #003C00;
-        font-family: Arial, Helvetica, sans-serif;
-    }
     .filtros button {
-        margin-right: 30%;
+        height: 60px;
+        width: 160px;
+        border-radius: 10px;
+        background-color: rgb(15, 152, 206);
+        color: aliceblue;
+        font-size: 100%;
+
     }
-    #tipo {
-        margin-right: 47.5%;
-    }
+
+    @media screen and (max-width: 1150px) {
+        body {
+            background-color: rgb(75, 3, 207);
+            height: 100%;
+            width: 100%;
+        }
+
+        .menus li {
+            padding: 5px;
+            color: rgb(23, 6, 83);
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 1vw;
+            margin-top: 10px;
+            
+
+        }
+        .menus ul {
+        margin-top: 0;
+        padding-top: 20px;
+        display: flex;
+        list-style-type: none;
+        padding-bottom: 20px;
+        margin-left: 4vw;
+        margin-right: 6vw;
+        display: block;
     
+
+
+    }
+
+        .menus img {
+            height: 50px;
+            width: 50px;
+
+        }
+
+        .menus a {
+        font-size: 110%;
+        color: rgb(23, 6, 83);
+        font-family: Arial;
+        text-decoration: none;
+        text-wrap: nowrap;
+        font-weight: bold;
+        padding-right: 620px;
+        padding-top: 35px;
+        padding-bottom: 3px;
+
+
+    }
+
+        .filtros input {
+            background-color: azure;
+            border-radius: 9px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 160px;
+            border: 3px solid #03c203;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+            margin-left: 4vw;
+            margin-top: 20px;
+            margin-left: 180px;
+            font-size: 100%;
+        }
+
+        .filtros button {
+            height: 43px;
+            width: 110px;
+            border-radius: 10px;
+            background-color: rgb(15, 152, 206);
+            color: aliceblue;
+            font-size: 100%;
+
+        }
+
+
+    }
 </style>
 
 <body>
     <header>
         <div class="titulo">
             <img src="imagens/ifpaoficial.jpg">
-            <hi>IFPA repositorio de trabalhos academicos</hi>
+            <h1>IFPA Repositorio De Trabalhos Academicos</h1>
             <div>
 
             </div>
@@ -167,66 +225,43 @@
         <nav>
             <ul>
                 <li>
-                    <a href="perfil.html"> Perfil do usuário </a>
+                    <a href="perfil.html"><img
+                            src="imagens/account_avatar_face_man_people_profile_user_icon_123197.svg"> Perfil do usuário
+                    </a>
                 </li>
                 <li>
-                    <a href="ProjetosIF.html"> Projetos IFPA </a>
+                    <a href="ProjetosIF.html"><img
+                            src="imagens/3643772-archive-archives-document-folder-open_113445.svg"> Projetos IFPA </a>
                 </li>
                 <li>
-                    <a href="pesquisadores.html"> Pesquisadores </a>
+                    <a href="pesquisadores.html"><img
+                            src="imagens/search_magnifyng_glass_search_locate_icon_124190.svg"> Pesquisadores </a>
                 </li>
                 <li>
-                    <a href="cursos.html"> Cursos IFPA </a>
+                    <a href="cursos.html"><img
+                            src="imagens/toga_university_college_graduate_school_hat_icon_255782.svg"> Cursos IFPA </a>
                 </li>
+                <div class="corpo">
+
+                    <div class="filtros">
+                        <form method="post" id="consutar">
+                            <input type="search" placeholder="nome do projeto">
+
+
+                            <button onclick="consutar()" type="submit" name="pesquisa">Pesquisar</button>
+
+                        </form>
+                    </div>
+                </div>
             </ul>
         </nav>
     </div>
 
-    <div class="corpo">
-
-        <div class="filtros">
-            <form method="post" id="consutar">
-                <label> Projeto academico </label>
-                <input type="search">
-                <br>
-                <label> Pesquisador </label>
-                <input type="search">
-                <br>
-                <label> Curso </label>
-                <input type="search">
-                <br>
-                <label> Turma </label>
-                <input type="search">
-                <br>
-                <label> Ano da pesquisa </label>
-                <input type="search">
-                <br>
-                <label> Categoria de pesquisa </label>
-                <select id="Categoria">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Projetos integradores</option>
-                    <option>Projetos de extensão</option>
-                    <option>Projetos de termino de Curso</option>
-                </select>
-                <br>
-                <label id="tipo"> Tipo de pesquisa </label> &nbsp &nbsp &nbsp
-                <label>
-                    <input type="radio" name="tipo" value="Interno" checked> Interno</label>
-    
-                <label>
-                    <input type="radio" name="tipo" value="Externo"> Externo
-                </label>
-                <br>
-    
-                <button onclick="consutar()" type="submit" name="pesquisa" >Pesquisar</button>
-
-            </form>
-        </div>
-        </div>
 
 
 
-<script src="scripts/paginainicial.js"></script>
+
+    <script src=""></script>
 
 
 
