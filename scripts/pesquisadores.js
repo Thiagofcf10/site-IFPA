@@ -59,7 +59,7 @@ function listagem(listaU) {
 
 </style>
 <div class="itens">
-  <img src="imagens/toga_university_college_graduate_school_hat_icon_255782.svg"">
+  <img src="imagens/account_avatar_face_man_people_profile_user_icon_123197.svg">
   <h2 class="tituloL" data-id="${listaU.id}">Aluno:&nbsp;&nbsp;${   listaU.nome_aluno}</h2>
   <h3 class="info"> Matricula:&nbsp;${listaU.matricula}</h3>
   <h3 class="info"> Curso:&nbsp;${listaU.curso}</h3>
