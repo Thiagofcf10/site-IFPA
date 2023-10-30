@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta nome="viewport" content="width=devide-width, initial-scale=1.0, maximun-scale=1.0">
     <title>IFPA repositorios</title>
+    <link rel="estilo" href="estilo.css" >
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
 
 </head>
-<style>
+<style src="estilo.css">
+    body {
+        background-color: rgb(255, 255, 255);
+        margin: 0%;
+        padding: 0%;
 
+    }
 
     .titulo h1 {
         text-align: center;
         background-color: green;
-        border-radius: 15px;
+        border-radius: 10px;
     }
 
     button {
@@ -24,32 +33,129 @@
         background-color: rgb(65, 35, 175);
         color: aliceblue;
         width: 250px;
+        margin-top: 4%;
 
     }
-    .titulo{
+
+    .titulo {
+        padding: auto;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 250%;
         color: aliceblue;
         text-align: center;
-        background-color: green;
-        border-radius: 10px;
-        height: 50px;
+        background-color: #003C00;
+        border-radius: 0px;
+        padding-bottom: 1%;
     }
+
+    .titulo img {
+        height: 130px;
+        width: 150px;
+
+    }
+
+    .menus {
+        background-color: #003C00;
+
+    }
+
     .menus a {
-        padding: 2%;
+        font-size: 110%;
+        padding: 7%;
         margin: auto;
-        border: 2px;
-        color:rgb(45, 83, 6);
+        color: rgb(23, 6, 83);
         font-family: Arial;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        text-decoration: none;
+        text-wrap: nowrap;
+        font-weight: bold;
 
-}
+    }
+
+    .menus a:hover {
+        background-color: rgb(65, 35, 175);
+        color: aliceblue;
+
+    }
+
+    .menus ul {
+        margin-top: 0%;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-inline: auto;
+        max-inline-size: 60%;
+        min-inline-size: 40%;
 
 
+    }
+
+    .filtros {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 110%;
+        color: #003C00;
+        line-height: 40px;
+        width: 100%;
+        text-align:right;
+        padding: 1%;
+        display: block;
+    }
+
+    .corpo {
+        padding: 5%;
+        padding-right: 20%;
+        padding-top: 0.5%;
+        text-wrap: nowrap;
+
+    }
+
+    .MT li {
+        background-color: #003C00;
+        height: 10px;
+        width: 50px;
+    }
+    .filtros label {
+        margin-right: 1%;
+    }
+
+    .filtros input {
+        background-color: azure;
+        border-radius: 9px;
+        padding: 0.4%;
+        border: 3px solid #003C00;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-right: 49%;
+        padding-left: 1% ;
+
+        
+    }
+
+    .filtros select {
+        background-color: azure;
+        border-radius: 9px;
+        padding: 0.4%;
+        padding-right:47.5%;
+        border: 3px solid #003C00;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .filtros button {
+        margin-right: 30%;
+    }
+    #tipo {
+        margin-right: 47.5%;
+    }
+    
 </style>
 
 <body>
     <header>
         <div class="titulo">
+            <img src="imagens/ifpaoficial.jpg">
             <hi>IFPA repositorio de trabalhos academicos</hi>
             <div>
 
@@ -57,59 +163,70 @@
         </div>
     </header>
 
-        <div class="menus">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="perfil.html"> Perfil do aluno </a>
-                    </li>
-                    <li>
-                        <a href="projetos_IFPA.html"> Projetos IFPA </a>
-                    </li>
-                    <li>
-                        <a href="pesquisadores.html"> Pesquisadores </a>
-                    </li>
-                    <li>
-                        <a href="cursos.html"> Cursos </a>
-                    </li>
-                </ul>
-            </nav>
+    <div class="menus">
+        <nav>
+            <ul>
+                <li>
+                    <a href="perfil.html"> Perfil do usuário </a>
+                </li>
+                <li>
+                    <a href="ProjetosIF.html"> Projetos IFPA </a>
+                </li>
+                <li>
+                    <a href="pesquisadores.html"> Pesquisadores </a>
+                </li>
+                <li>
+                    <a href="cursos.html"> Cursos IFPA </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="corpo">
+
+        <div class="filtros">
+            <form method="post" id="consutar">
+                <label> Projeto academico </label>
+                <input type="search">
+                <br>
+                <label> Pesquisador </label>
+                <input type="search">
+                <br>
+                <label> Curso </label>
+                <input type="search">
+                <br>
+                <label> Turma </label>
+                <input type="search">
+                <br>
+                <label> Ano da pesquisa </label>
+                <input type="search">
+                <br>
+                <label> Categoria de pesquisa </label>
+                <select id="Categoria">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Projetos integradores</option>
+                    <option>Projetos de extensão</option>
+                    <option>Projetos de termino de Curso</option>
+                </select>
+                <br>
+                <label id="tipo"> Tipo de pesquisa </label> &nbsp &nbsp &nbsp
+                <label>
+                    <input type="radio" name="tipo" value="Interno" checked> Interno</label>
+    
+                <label>
+                    <input type="radio" name="tipo" value="Externo"> Externo
+                </label>
+                <br>
+    
+                <button onclick="consutar()" type="submit" name="pesquisa" >Pesquisar</button>
+
+            </form>
+        </div>
         </div>
 
-    
-
-    <form>
-        <label> Projeto academicos </label>
-        <input>
-        <br>
-        <label> Pesquisador </label>
-        <input>
-        <br>
-        <label> Curso </label>
-        <input>
-        <br>
-        <label> Turma </label>
-        <input>
-        <br>
-        <label> Ano da pesquisa </label>
-        <input>
-        <br>
-        <label> categoria de pesquisa </label>
-        <input>
-        <br>
-        <a> Tipo de pesquisa </a>
-        <label> interna </label>
-        <input type="radio">
-        <label> Externa </label>
-        <input type="radio">
-        <br>
-
-        <button>Pesquisar</button>
-
-    </form>
 
 
-
+<script src="scripts/paginainicial.js"></script>
 
 
 

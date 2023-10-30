@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pagina de projetos</title>
+    <meta nome="viewport" content="width=devide-width, initial-scale=1.0, maximun-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<style>
+    body {
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        
+
+    }
+
+    .titulo h1 {
+        text-align: center;
+        background-color: green;
+        border-radius: 10px;
+    }
+
+    .titulo {
+        padding-bottom: 1%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90px;
+        color: aliceblue;
+        text-align: center;
+        background-color: #003C00;
+
+
+
+    }
+
+    .titulo img {
+        height: 130px;
+        width: 150px;
+
+    }
+
+    .menus {
+        background-color: rgb(24, 168, 43);
+
+    }
+
+    .menus a {
+        font-size: 40px;
+        padding-block: 4% 2%;
+        padding-top: 2%;
+        color: white;
+        font-family: Arial;
+        border-radius: 10px;
+        text-decoration: none;
+        text-wrap: nowrap;
+        font-weight: bold;
+        margin-right: 35px;
+
+    }
+
+    .menus a:hover {
+        background-color: rgb(65, 35, 175);
+        color: aliceblue;
+
+
+    }
+
+    .menus ul {
+        margin-top: 0%;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        margin-inline: auto;
+        max-inline-size: 68%;
+        margin-bottom: 0;
+
+    }
+
+    #tela {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 80vh;
+        padding-left: 91vw;
+        border: 10px red solid;
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="titulo">
+            <img src="imagens/ifpaoficial.jpg">
+            <hi>Projetos academicos IFPA</hi>
+        </div>
+            <div class="menus">
+                <nav>
+                    <ul>
+                        <li id="integradores" onclick="">
+                            <a href=""> Projetos integradores </a>
+                        </li>
+                        <li id="extensao" onclick="">
+                            <a href=""> Projetos de extensão</a>
+                        </li>
+                        <li id="conclusao" onclick="">
+                            <a href=""> Trabalho de conclusão de curso </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+
+    <div id="lista">
+        <ul id="todaslista">
+
+
+        </ul>
+    </div>
+
+
+
+</body>
+<script src="scripts/projetos.js"></script>
+
+
+
+</html>
