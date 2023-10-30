@@ -1,0 +1,12 @@
+body {
+    background-color: #07b363;
+}
+.titulo h1 {
+    font-weight: bold;
+    font-family: Arial;
+    align-items: center;
+    color: chartreuse;
+    padding: 10px;
+    margin: 0% 20%;
+
+}
