@@ -28,7 +28,6 @@ function listagem(listaU) {
       color: rgb(255, 255, 255);
       background-color: #003C00;
       padding: 1%;
-      margin: 0px;
       margin-bottom: 15px;
       margin-right: 20px;
       border-radius: 15px;
@@ -56,7 +55,7 @@ function listagem(listaU) {
       margin-left: 20px;
       margin-right: 20px;
   }
-  .tituloL text { color: aqua;}
+
 
 </style>
 <div class="itens">

@@ -13,7 +13,7 @@ const todaslista = document.querySelector("#todaslista")
 async function getlista(){
 
   const {data, error} = await _supabase
-  .from('curso')
+  .from('alunos')
   .select('*')
   console.log(data)
 
@@ -60,10 +60,12 @@ function listagem(listaU) {
 </style>
 <div class="itens">
   <img src="imagens/toga_university_college_graduate_school_hat_icon_255782.svg"">
-  <h2 class="tituloL" data-id="${listaU.id}">Curso:&nbsp;&nbsp;${   listaU.nome_curso}</h2>
-  <h3 class="info"> codigo da turma:&nbsp;${listaU.codigo_turmas}</h3>
+  <h2 class="tituloL" data-id="${listaU.id}">Aluno:&nbsp;&nbsp;${   listaU.nome_aluno}</h2>
+  <h3 class="info"> Matricula:&nbsp;${listaU.matricula}</h3>
+  <h3 class="info"> Curso:&nbsp;${listaU.curso}</h3>
+  <h3 class="info"> Turma:&nbsp;${listaU.turma}</h3>
+  <h3 class="info"> Orientador&nbsp;${listaU.orientador}</h3>
 </div>
-
 `
 todaslista.innerHTML += itenslista
 
