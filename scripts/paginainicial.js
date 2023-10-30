@@ -8,9 +8,7 @@ const extensao = document.querySelector("#extensao");
 const conclusao = document.querySelector("#conclusao");
 const todaslista = document.querySelector("#todaslista");
 const pesquisa = document.querySelector(".menus input");
-const itens = document.querySelectorAll('#todaslista');
 
-FilterElement.addEvenListener('input' , filteritens);
 
 
 async function getlista() {
