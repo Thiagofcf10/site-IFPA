@@ -32,6 +32,8 @@ function listagem(listaU) {
       margin-bottom: 15px;
       margin-right: 20px;
       border-radius: 15px;
+      height: 10%;
+      width: 30%;
       
   }
   .tituloL{
