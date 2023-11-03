@@ -29,7 +29,6 @@ function listagem(listaU) {
       background-color: #003C00;
       padding: 1%;
       margin-bottom: 15px;
-      margin-right: 20px;
       border-radius: 15px;
       
   }
@@ -37,8 +36,8 @@ function listagem(listaU) {
       background-color: #003C00;
       color: #8aeb8a;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 35px;
-      padding: 20px;
+      font-size: 290%;
+      padding: 2%;
       padding-left: 2%;
       border-radius: 10px;
       margin-left: 20px;
@@ -48,12 +47,35 @@ function listagem(listaU) {
       background-color: rgb(255, 255, 255);
       color: #003C00;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
+      font-size: 190%;
       padding: 20px;
       padding-left: 2%;
       border-radius: 10px;
       margin-left: 20px;
       margin-right: 20px;
+  }
+  @media screen and (max-width: 1950px) {
+    .itens {
+      color: rgb(255, 255, 255);
+      background-color: #003C00;
+      padding: 1%;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      
+  }
+  .tituloL{
+      font-size: 110%;
+      padding: 2%;
+      padding-left: 2%;
+  }
+  .info{
+      font-size: 60%;
+      padding: 20px;
+      padding-left: 2%;
+      border-radius: 10px;
+
+  }
+
   }
 
 

@@ -58,6 +58,20 @@ function listagem(listaU) {
       margin-left: 20px;
       margin-right: 20px;
   }
+  @media screen and (max-width: 1950px) {
+  
+    .itens {
+    color: rgb(255, 255, 255);
+    background-color: #003C00;
+    padding: 1%;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 10%;
+    width: 100%;
+  }
+    
+}
 
 
 </style>

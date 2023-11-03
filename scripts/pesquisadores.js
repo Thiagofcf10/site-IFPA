@@ -27,34 +27,68 @@ function listagem(listaU) {
   .itens {
     color: rgb(255, 255, 255);
     background-color: #003C00;
-    padding: 0.6%;
-    margin-bottom: 15px;
-    margin-right: 80px;
-    border-radius: 15px;
-
-}
-  .itens img {
     padding: 1%;
-    margin: 0px;
+    margin-bottom: 15px;
+    margin-right: 20px;
     border-radius: 15px;
-    height: 180px;
-    width: 180px;
+    height: 10%;
+    width: 30%;
     
 }
+img{
+  height: 35%;
+  width: 35%;
+}
+.tituloL{
+    background-color: #003C00;
+    color: #8aeb8a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 290%;
+    padding: 2%;
+    padding-left: 2%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.info{
+    background-color: rgb(255, 255, 255);
+    color: #003C00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 190%;
+    padding: 20px;
+    padding-left: 2%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  @media screen and (max-width: 1950px) {
+    .itens {
+      color: rgb(255, 255, 255);
+      background-color: #003C00;
+      padding: 1%;
+      margin-bottom: 15px;
+      margin-right: 20px;
+      border-radius: 15px;
+      height: 10%;
+      width: 100%;
+    }
+    img{
+      height: 20%;
+      width: 20%;
+    }
   .tituloL{
-      color: #8aeb8a;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 35px;
-
+      font-size: 270%;
+      padding: 2%;
+      padding-left: 2%;
   }
   .info{
-      background-color: rgb(255, 255, 255);
-      color: #003C00;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
+      font-size: 170%;
       padding: 20px;
+      padding-left: 2%;
       border-radius: 10px;
+
   }
+}
 
 
 </style>

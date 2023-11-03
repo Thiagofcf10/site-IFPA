@@ -17,6 +17,14 @@
 
 
     }
+     #logo {
+        position: absolute;
+        height: 10.5%;
+        width: 7%;
+        margin-left: 3%;
+        margin-top: 1%;
+
+    }
 
     .titulo h1 {
         text-align: center;
@@ -26,21 +34,14 @@
 
     .titulo {
         padding-bottom: 1%;
+        padding-top: 1%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 90px;
         color: aliceblue;
         text-align: center;
         background-color: #003C00;
-        overflow: visible;
 
 
-
-    }
-
-    .titulo img {
-        height: 130px;
-        width: 150px;
-        margin-right: 20px;
 
     }
 
@@ -58,9 +59,12 @@
         text-decoration: none;
         text-wrap: nowrap;
         font-weight: bold;
-        margin-right: 5vw;
-        margin-left: 5vw;
         background-color: rgb(255, 255, 255);
+
+    }
+    .menus li:hover {
+        background-color: rgb(0, 44, 82);
+
 
     }
 
@@ -74,34 +78,45 @@
         text-decoration: none;
         text-wrap: nowrap;
         font-weight: bold;
-
-
     }
-
     .menus a:hover {
-        color: rgb(0, 129, 241);
+        color:white;
 
 
     }
+
 
     .menus ul {
         margin-top: 0%;
         display: flex;
         list-style-type: none;
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
-        margin-left: 14vmax;
-
-
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: space-around;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    #todaslista{
+        margin-left: 80px;
+        margin-right: 80px;
+        padding: 0;
     }
 
 
     @media screen and (max-width: 1950px) {
         body {
             width: 100%;
-            background-color: #ff6c47;
+            background-color: #8147ff;
 
         }
+        #logo {
+        position: absolute;
+        height: 3.5%;
+        width: 7%;
+        margin-left: 3%;
+        margin-top: 1%;
+
+    }
 
         .titulo {
             padding-bottom: 1%;
@@ -166,8 +181,8 @@
 
 <body>
     <header>
+        <img id="logo" src="imagens/ifpaoficial.jpg">
         <div class="titulo">
-            <img src="imagens/ifpaoficial.jpg">
             <hi>Projetos academicos IFPA</hi>
         </div>
         <div class="menus">
