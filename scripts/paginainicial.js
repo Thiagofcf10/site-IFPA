@@ -6,8 +6,7 @@ const lista = document.querySelector('#lista');
 const integradores = document.querySelector("#integradores");
 const extensao = document.querySelector("#extensao");
 const conclusao = document.querySelector("#conclusao");
-const todaslista = document.querySelector("#todaslista");
-const pesquisa = document.querySelector(".menus input");
+
 
 
 
@@ -96,3 +95,7 @@ async function listageral() {
   });
 }
 listageral()
+
+const todaslista = document.querySelector("#todaslista ");
+const pesquisa = document.querySelector("form input");
+
