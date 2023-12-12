@@ -82,7 +82,7 @@
     .menus ul {
         margin-top: 0%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         list-style-type: none;
         margin-left: 15%;
         margin-right: 15%;
@@ -156,7 +156,7 @@
     <header>
         <div class="titulo">
             <img src="imagens/ifpaoficial.jpg">
-            <hi>IFPA repositorio de trabalhos academicos</hi>
+            <hi>Cadastro de alunos</hi>
             <div>
 
             </div>
@@ -169,15 +169,6 @@
                 <li>
                     <a href="perfil.html"> Perfil do usuário </a>
                 </li>
-                <li>
-                    <a href="ProjetosIF.html"> Projetos IFPA </a>
-                </li>
-                <li>
-                    <a href="pesquisadores.html"> Pesquisadores </a>
-                </li>
-                <li>
-                    <a href="cursos.html"> Cursos IFPA </a>
-                </li>
             </ul>
         </nav>
     </div>
@@ -186,20 +177,20 @@
 
         <div class="filtros">
             <form method="post" id="consutar">
-                <label> Projeto academico </label>
-                <input type="search">
+                <label> Nome Completo </label>
+                <input type="text" id="nome">
                 <br>
-                <label> Pesquisador </label>
-                <input type="search">
+                <label> Matricula </label>
+                <input type="number" id="Matricula">
                 <br>
                 <label> Curso </label>
-                <input type="search">
+                <input type="text" id="curso">
                 <br>
                 <label> Turma </label>
-                <input type="search">
+                <input type="text" id="turma">
                 <br>
-                <label> Ano da pesquisa </label>
-                <input type="search">
+                <label> pesquisa </label>
+                <input type="text" id="pesquisa">
                 <br>
                 <label> Categoria de pesquisa </label>
                 <select id="Categoria">
@@ -226,7 +217,7 @@
 
 
 
-<script src="scripts/paginainicial.js"></script>
+<script src="scripts/CadastroA.js"></script>
 
 
 
