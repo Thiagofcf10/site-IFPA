@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta nome="viewport" content="width=devide-width, initial-scale=1.0, maximun-scale=1.0">
     <title>IFPA repositorios</title>
-    <link rel="estilo" href="estilo.css" >
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 
@@ -108,7 +107,7 @@
 
     .corpo {
         padding: 5%;
-        padding-right: 20%;
+        padding-right: 25%;
         padding-top: 0.5%;
         text-wrap: nowrap;
 
@@ -144,7 +143,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .filtros button {
-        margin-right: 30%;
+        margin-right: 25%;
     }
     #tipo {
         margin-right: 47.5%;
@@ -156,7 +155,7 @@
     <header>
         <div class="titulo">
             <img src="imagens/ifpaoficial.jpg">
-            <hi>Cadastro de alunos</hi>
+            <hi>Cadastro de Professores</hi>
             <div>
 
             </div>
@@ -167,7 +166,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="perfil.html"> Perfil do usuário </a>
+                   
                 </li>
             </ul>
         </nav>
@@ -183,31 +182,27 @@
                 <label> Matricula </label>
                 <input type="number" id="Matricula">
                 <br>
-                <label> Curso </label>
-                <input type="text" id="curso">
+                <label> Email </label>
+                <input type="text" id="Email">
                 <br>
-                <label> Turma </label>
-                <input type="text" id="turma">
+                <label> Telefone </label>
+                <input type="text" id="Telefone">
                 <br>
-                <label> pesquisa </label>
-                <input type="text" id="pesquisa">
+                <label> Ano de admissão </label>
+                <input type="text" id="admissao">
                 <br>
-                <label> Categoria de pesquisa </label>
-                <select id="Categoria">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Projetos integradores</option>
-                    <option>Projetos de extensão</option>
-                    <option>Projetos de termino de Curso</option>
-                </select>
+                <label> Nome da area academica </label>
+                <input type="text" id="nomedaarea">
                 <br>
-                <label id="tipo"> Tipo de pesquisa </label> &nbsp &nbsp &nbsp
-                <label>
-                    <input type="radio" name="tipo" value="Interno" checked> Interno</label>
+                <label> Detalhes da area </label>
+                <input type="text" id="DetalhesA">
+                <br>
+                <label> Digite Uma Senha Para Acesso </label>
+                <input type="text" id="senha">
+
+
+                <br>
     
-                <label>
-                    <input type="radio" name="tipo" value="Externo"> Externo
-                </label>
-                <br>
     
                 <button onclick="" type="submit" name="cadastro" >Cadastrar</button>
 
@@ -217,7 +212,7 @@
 
 
 
-<script src="scripts/CadastroA.js"></script>
+<script src="scripts/CadastroP.js"></script>
 
 
 

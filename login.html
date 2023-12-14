@@ -2,14 +2,14 @@
 <html>
 
 <head>
-    <title>Pagina de projetos</title>
+    <title>repo</title>
     <meta nome="viewport" content="width=devide-width, initial-scale=1.0, maximun-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <style>
     * {
         box-sizing: border-box;
-        background-color: #008b00;
+        background-color: #003C00;
 
         body {
             height: 100%;
@@ -24,7 +24,7 @@
     form {
         color: rgb(248, 248, 248);
         width: 500px;
-        margin: 300px auto;
+        margin: 0px auto;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
 
@@ -54,28 +54,46 @@
         background-color: rgb(99, 101, 211)
     }
 
-    #cadas {
+    #ca {
         color: white;
+        display: block;
+        margin-top: 10%;
+        font-size: 20px;
+
+    }
+    #cp {
+        color: white;
+        font-size: 20px;
+
+        
     }
 
     .site {
         font-size: 60px;
         font-family: Arial, Helvetica, sans-serif;
 
+
+    }
+    img{
+        height: 320px;
+        width: 370px;
     }
 </style>
 
 <body>
     <header>
+        
     </header>
 
     <form>
+        <img src="imagens/ifpaoficial.jpg">
         <h1 class="site">Repositorio IFPA</h1>
         <H1>Conta</H1>
         <input type="text" placeholder="usuário" id="login">
         <input type="password" placeholder="senha" id="senha">
         <input id="bn" type="submit" value="login">
-        <a href="cadastro.html" id="cadas">Cadastro de Acesso</a>
+        <a href="cadastroA.html" id="ca">Cadastro de Acesso Alunos</a>
+        <a href="cadastroP.html" id="cp">Cadastro de Acesso Professores</a>
     </form>
     
 

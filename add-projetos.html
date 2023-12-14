@@ -108,7 +108,7 @@
 
     .corpo {
         padding: 5%;
-        padding-right: 20%;
+        padding-right: 25%;
         padding-top: 0.5%;
         text-wrap: nowrap;
 
@@ -135,6 +135,32 @@
         
     }
 
+    #aluno {
+        background-color: azure;
+        border-radius: 9px;
+        padding: 0.4%;
+        border: 3px solid #003C00;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-right: 49%;
+        padding-left: 1% ;
+        padding-bottom: 6%;
+
+        
+    }
+    #detalhes {
+        background-color: azure;
+        border-radius: 9px;
+        padding: 0.4%;
+        border: 3px solid #003C00;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-right: 49%;
+        padding-left: 1% ;
+        padding-bottom: 10%;
+
+        
+    }
+
+
     .filtros select {
         background-color: azure;
         border-radius: 9px;
@@ -144,7 +170,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .filtros button {
-        margin-right: 30%;
+        margin-right: 25%;
     }
     #tipo {
         margin-right: 47.5%;
@@ -156,7 +182,7 @@
     <header>
         <div class="titulo">
             <img src="imagens/ifpaoficial.jpg">
-            <hi>Cadastro de alunos</hi>
+            <hi>Cadastro de projetos</hi>
             <div>
 
             </div>
@@ -167,7 +193,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="perfil.html"> Perfil do usuário </a>
+                    <a href="perfil.html"> </a>
                 </li>
             </ul>
         </nav>
@@ -177,39 +203,29 @@
 
         <div class="filtros">
             <form method="post" id="consutar">
-                <label> Nome Completo </label>
+                <label> Nome do projeto </label>
                 <input type="text" id="nome">
                 <br>
-                <label> Matricula </label>
-                <input type="number" id="Matricula">
+                <label> Tipo do projeto </label>
+                <input type="text" id="tipop">
                 <br>
-                <label> Curso </label>
-                <input type="text" id="curso">
+                <label> Area academica </label>
+                <input type="text" id="area">
                 <br>
-                <label> Turma </label>
-                <input type="text" id="turma">
+                <label> Orientador </label>
+                <input type="text" id="orientador">
                 <br>
-                <label> pesquisa </label>
-                <input type="text" id="pesquisa">
+                <label> Alunos participantes </label>
+                <input type="text" id="aluno">
                 <br>
-                <label> Categoria de pesquisa </label>
-                <select id="Categoria">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Projetos integradores</option>
-                    <option>Projetos de extensão</option>
-                    <option>Projetos de termino de Curso</option>
-                </select>
+                <label> Detalhes do projeto </label>
+                <input type="text" id="detalhes">
                 <br>
-                <label id="tipo"> Tipo de pesquisa </label> &nbsp &nbsp &nbsp
-                <label>
-                    <input type="radio" name="tipo" value="Interno" checked> Interno</label>
-    
-                <label>
-                    <input type="radio" name="tipo" value="Externo"> Externo
-                </label>
+
                 <br>
     
-                <button onclick="" type="submit" name="cadastro" >Cadastrar</button>
+    
+                <button onclick="" type="submit" name="Adicionar projeto" >Adicionar projeto</button>
 
             </form>
         </div>
