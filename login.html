@@ -42,7 +42,7 @@
         background-color: #ffffff;
     }
 
-    #bn {
+    button {
         display: block;
         color: white;
         margin: 10px auto;
@@ -61,11 +61,12 @@
         font-size: 20px;
 
     }
+
     #cp {
         color: white;
         font-size: 20px;
 
-        
+
     }
 
     .site {
@@ -74,7 +75,8 @@
 
 
     }
-    img{
+
+    img {
         height: 320px;
         width: 370px;
     }
@@ -82,20 +84,27 @@
 
 <body>
     <header>
-        
+
     </header>
 
-    <form>
+    <form class="label-float">
+        <div id="msgError"></div>
         <img src="imagens/ifpaoficial.jpg">
         <h1 class="site">Repositorio IFPA</h1>
         <H1>Conta</H1>
-        <input type="text" placeholder="usuário" id="login">
-        <input type="password" placeholder="senha" id="senha">
-        <input id="bn" type="submit" value="login">
+        <label id="userLabel" for="usuario"></label>
+        <input type="text" placeholder="usuário" id="Usuario" required>
+        <label id="senhaLabel" for="senha"></label>
+        <input type="password" placeholder="senha" id="senha" required>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        <div class="justify-center">
+            <button onclick="entrar()">Entrar</button>
+        </div>
         <a href="cadastroA.html" id="ca">Cadastro de Acesso Alunos</a>
         <a href="cadastroP.html" id="cp">Cadastro de Acesso Professores</a>
+    </div>
     </form>
-    
+
 
     </div>
 
