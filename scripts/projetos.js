@@ -64,12 +64,12 @@ function listagem(listaU) {
       
   }
   .tituloL{
-      font-size: 140%;
+      font-size: 170%;
       padding: 2%;
       padding-left: 2%;
   }
   .info{
-      font-size: 80%;
+      font-size: 100%;
       padding: 20px;
       padding-left: 2%;
       border-radius: 10px;
