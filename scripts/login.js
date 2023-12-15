@@ -10,6 +10,7 @@ btn.addEventListener('click', ()=>{
   }
 })
 
+
 function entrar(){
   let usuario = document.querySelector('#usuario')
   let userLabel = document.querySelector('#userLabel')
@@ -21,14 +22,14 @@ function entrar(){
   let listaUser = []
   
   let userValid = {
-    nome: 'null',
-    user: 'null',
-    senha: 'null'
+    nome: '',
+    user: '',
+    senha: ''
   }
   
   listaUser = JSON.parse(localStorage.getItem('listaUser'))
   
-  listaUser?.forEach((item) => {
+  listaUser.forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
        
       userValid = {

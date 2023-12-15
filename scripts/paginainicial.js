@@ -21,9 +21,8 @@ logado.innerHTML = `Olá ${userLogado.nome}`;
 function sair() {
   localStorage.removeItem("token");
   localStorage.removeItem("userLogado");
-  window.location.href = "./assets/html/signin.html";
+  window.location.href = "./login.html";
 }
-
 
 
 

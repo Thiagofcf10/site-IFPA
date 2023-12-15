@@ -178,11 +178,11 @@
             <div id="msgError"></div>
             <div id="msgSuccess"></div>
             <form method="post" id="cadastrof">
-                <label> Nome Completo </label>
+                <label id="labelNome" for="nome">Nome Completo</label>
                 <input type="text" id="usuario" required>
                 <br>
-                <label> Matricula </label>
-                <input type="number" id="Matricula">
+                <label id="labelUsuario" for="usuario"> Matricula </label>
+                <input type="number" id="usuario">
                 <br>
                 <label> Email </label>
                 <input type="text" id="Email">
@@ -193,8 +193,15 @@
                 <label> Turma </label>
                 <input type="text" id="turma">
                 <br>
-                <label> Digite Uma Senha Para Acesso </label>
+                <label id="labelSenha" for="senha"> Digite Uma Senha Para Acesso </label>
                 <input type="password" id="senha" required>
+
+                <div class="label-float">
+                    <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                    <input type="password" id="confirmSenha" placeholder=" " required />
+
+                    <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                  </div>
 
                 <br>
     
