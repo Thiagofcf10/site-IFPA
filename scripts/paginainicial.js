@@ -6,6 +6,7 @@ const lista = document.querySelector('#lista');
 const integradores = document.querySelector("#integradores");
 const extensao = document.querySelector("#extensao");
 const conclusao = document.querySelector("#conclusao");
+const todaslista = document.querySelector("#todaslista");
 
 //condição para a tela de login
 if (localStorage.getItem("token") == null) {
@@ -34,7 +35,7 @@ async function getlista() {
   console.log(data)
 
 
-  return data;
+  return data
 }
 
 function listagem(listaU) {
@@ -112,8 +113,7 @@ async function listageral() {
 }
 listageral()
 
-const todaslista = document.querySelector("#todaslista");
-const pesquisa = document.querySelector("form input");
+
 
 
 

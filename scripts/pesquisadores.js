@@ -98,7 +98,7 @@ img{
   <h3 class="info"> Matricula:&nbsp;${listaU.matricula}</h3>
   <h3 class="info"> Curso:&nbsp;${listaU.curso}</h3>
   <h3 class="info"> Turma:&nbsp;${listaU.turma}</h3>
-  <h3 class="info"> Orientador&nbsp;${listaU.orientador}</h3>
+  <h3 class="info"> Orientador&nbsp;${listaU.coordenador}</h3>
 </div>
 `
 todaslista.innerHTML += itenslista
