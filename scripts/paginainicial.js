@@ -34,7 +34,7 @@ async function getlista() {
   console.log(data)
 
 
-  return data
+  return data;
 }
 
 function listagem(listaU) {
@@ -93,9 +93,9 @@ function listagem(listaU) {
 <div class="itens">
   <h2 class="tituloL" data-id="${listaU.id}">Nome do projeto:&nbsp;&nbsp;${listaU.nome_projetos}</h2>
   <h3 class="info">Area de pesquisa:&nbsp;${listaU.area_de_pesquisa}</h3>
-  <h3 class="info">Nome do pesquisador:&nbsp;${listaU.nome_pesquisadores}</h3>
+  <h3 class="info">Nome do pesquisado:&nbsp;${listaU.nome_pesquisadores}</h3>
   <h3 class="info"> Data de publicação da pesquisa:&nbsp;${listaU.data_publicacao}</h3>
-  <h3 class="info"> Orientador da pesquisa:&nbsp;${listaU.orientador}</h3>
+  <h3 class="info"> Orientador da pesquisa:&nbsp;${listaU.coordenador}</h3>
 </div>
 `
   todaslista.innerHTML += itenslista
@@ -112,7 +112,7 @@ async function listageral() {
 }
 listageral()
 
-const todaslista = document.querySelector("#todaslista ");
+const todaslista = document.querySelector("#todaslista");
 const pesquisa = document.querySelector("form input");
 
 
