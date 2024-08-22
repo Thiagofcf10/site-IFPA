@@ -16,6 +16,17 @@ async function loginuser(){
   const localuser = await _supabase.auth.getSession();
   console.log(localuser);
 
+  if (localuser == null){
+    alert("faça login");
+    setTimeout(() => {
+      window.location.href = 'login.html'
+    }, 1000)
+
+  } 
+  else{
+    alert("bem-vindo")
+  }
+
 }
 
 loginuser()
