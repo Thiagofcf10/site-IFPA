@@ -37,14 +37,14 @@ async function cadastro() {
     alert('erro no cadastro tente novamente')
     setTimeout(() => {
       window.location.href = 'cadastroA.html'
-    }, 20000)
+    }, 2000)
   }
   else {
     console.log(data);
     alert('Cadastrado com sucesso vc será redirecionado para pagina de login')
     setTimeout(() => {
       window.location.href = 'login.html'
-    }, 20000)
+    }, 2000)
   }
 }
 

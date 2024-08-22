@@ -40,7 +40,7 @@ async function sair(){
     console.log('saindo do ifpa repo')
     setTimeout(() => {
       window.location.href = 'login.html'
-    }, 10000)
+    }, 1000)
   }
 }
 

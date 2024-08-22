@@ -26,14 +26,14 @@ const senha = document.getElementById('senha');
         alert('usuaruio não cadastrado')
         setTimeout(() => {
           window.location.href = 'cadastroA.html'
-        }, 5000)
+        }, 1000)
       }
       else{
         console.log(data);
         alert('logado com sucesso')
         setTimeout(() => {
           window.location.href = 'index.html'
-        }, 10000)
+        }, 1000)
       }
     }   
   
