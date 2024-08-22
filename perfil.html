@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pagina de projetos</title>
-        <meta nome="viewport" content="width=devide-width, initial-scale=1.0, maximun-scale=1.0">
-    </head>
-    <style>
+
+<head>
+    <title>Pagina de projetos</title>
+    <meta nome="viewport" content="width=devide-width, initial-scale=1.0, maximun-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<style>
     body {
         background-color: rgb(255, 255, 255);
         margin: 0%;
@@ -17,6 +19,7 @@
         background-color: green;
         border-radius: 10px;
     }
+
     .titulo {
         padding: auto;
         font-family: Arial, Helvetica, sans-serif;
@@ -34,28 +37,52 @@
         width: 150px;
 
     }
-    .corpo h1{
+
+    .corpo h1 {
         font-size: 200%;
         text-align: center;
         padding: 15%;
 
     }
-    </style>
-    <body>
-        <header>
-            <div class="titulo">
-                <img src="imagens/ifpaoficial.jpg">
-                <hi>Perfil do usuário</hi>
+</style>
 
-                <div class="corpo"><h1>EM BREVE</h1></div>
-    
+<body>
+    <header>
+        <div class="titulo">
+            <img src="imagens/ifpaoficial.jpg">
+            <hi>Perfil do usuário</hi>
+
+            <div class="corpo">
+                <div id="dados_user">
+
+                    <h2>nome</h2>
+                    <div id="nome">
+                        
+                    </div>
+                    <h2>matricula</h2>
+                    <p id="matricula">
+                        <label for="matricula"></label>
+                    <h2>curso</h2>
+                    <p id="curso">
+                        <label for="curso"></label>
+                    <h2>turma</h2>
+                    <p id="turma">
+                        <label for="turma"></label>
+                    </p>
                 </div>
-        </header>
 
 
 
-    </body>
+
+            </div>
+
+        </div>
+    </header>
 
 
+
+</body>
+
+<script src="scripts/DG.js"></script>
 
 </html>

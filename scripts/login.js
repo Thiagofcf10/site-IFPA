@@ -1,62 +1,85 @@
-let btn = document.querySelector('.fa-eye')
-
-btn.addEventListener('click', ()=>{
-  let inputSenha = document.querySelector('#senha')
-  
-  if(inputSenha.getAttribute('type') == 'password'){
-    inputSenha.setAttribute('type', 'text')
-  } else {
-    inputSenha.setAttribute('type', 'password')
-  }
-})
+const supabaseUrl = 'https://eklotjekflmuuqycnqnz.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVrbG90amVrZmxtdXVxeWNucW56Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTczMzkxNjQsImV4cCI6MjAxMjkxNTE2NH0._WkAqYcJHdpBj0S-pgCreX9KvCxClKQc233t6qHIiOU'
 
 
-function entrar(){
-  let usuario = document.querySelector('#usuario')
-  let userLabel = document.querySelector('#userLabel')
+
+/* if (senha == false ){
+   alert('As senhas digite a senha!');
+   return;
+ }
+   */
+// Insere os dados no banco de dados Supabase
+const emailC = document.getElementById('emailC');
+const senha = document.getElementById('senha');
+    
+    async function sign() {
+        
+        const _supabase = supabase.createClient(supabaseUrl, supabaseKey)
+    
+          
+      const { data, error } = await _supabase.auth.signInWithPassword({
+        email: emailC.value,
+        password: senha.value,
+      })
+      if (error){
+        console.log(error);
+        alert('usuaruio não cadastrado')
+        setTimeout(() => {
+          window.location.href = 'cadastroA.html'
+        }, 5000)
+      }
+      else{
+        console.log(data);
+        alert('logado com sucesso')
+        setTimeout(() => {
+          window.location.href = 'index.html'
+        }, 10000)
+      }
+    }   
   
-  let senha = document.querySelector('#senha')
-  let senhaLabel = document.querySelector('#senhaLabel')
+
   
-  let msgError = document.querySelector('#msgError')
-  let listaUser = []
-  
-  let userValid = {
-    nome: '',
-    user: '',
-    senha: ''
-  }
-  
-  listaUser = JSON.parse(localStorage.getItem('listaUser'))
-  
-  listaUser.forEach((item) => {
-    if(usuario.value == item.userCad && senha.value == item.senhaCad){
-       
-      userValid = {
-         nome: item.nomeCad,
-         user: item.userCad,
-         senha: item.senhaCad
-       }
+/*   function loginuser() {
+      _supabase.auth.gerSession().then(({data: {session}}) => {
+        setSession(session);
+      })
       
+      _supabase.auth.onAuthStateChange((event, session) => {
+        setSession(session);
+      })
+    
     }
-  })
-   
-  if(usuario.value == userValid.user && senha.value == userValid.senha){
-    window.location.href = './index.html'
-    
-    let mathRandom = Math.random().toString(16).substr(2)
-    let token = mathRandom + mathRandom
-    
-    localStorage.setItem('token', token)
-    localStorage.setItem('userLogado', JSON.stringify(userValid))
-  } else {
-    userLabel.setAttribute('style', 'color: red')
-    usuario.setAttribute('style', 'border-color: red')
-    senhaLabel.setAttribute('style', 'color: red')
-    senha.setAttribute('style', 'border-color: red')
-    msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = 'Usuário ou senha incorretos'
-    usuario.focus()
-  }
+                  setTimeout(() => {
+              window.location.href = 'index.html'
+            }, 1000)
+          }
+
+              async function loginuser(){
+      const localuser = await _supabase.auth.getSession();
+      console.log(localuser);
+    }
   
-}
+)
+*/
+
+
+
+    
+ /* else {
+
+
+  alert('usuario não logado');
+  setTimeout(() => {
+    window.location.href = 'login.html'
+  }, 1000)
+
+}*/
+
+/*
+      const { error: profileError } = await _supabase.from('usuarios').insert([{ id: data.user.id, email: email }]);
+ 
+            if (profileError) {
+                throw profileError;
+            }
+ 
+*/

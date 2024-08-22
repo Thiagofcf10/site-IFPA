@@ -8,24 +8,43 @@ const extensao = document.querySelector("#extensao");
 const conclusao = document.querySelector("#conclusao");
 const todaslista = document.querySelector("#todaslista");
 
+//////////////////////////////////////////////////////////////////////////////////////////
+
 //condição para a tela de login
-if (localStorage.getItem("token") == null) {
-  alert("Você precisa estar logado para acessar essa página");
-  window.location.href = "./login.html";
+
+async function loginuser(){
+  const localuser = await _supabase.auth.getSession();
+  console.log(localuser);
+
 }
 
-const userLogado = JSON.parse(localStorage.getItem("userLogado"));
+loginuser()
 
-const logado = document.querySelector("#logado");
-logado.innerHTML = `Olá ${userLogado.nome}`;
+function usuario(){
+  
+  const user =  _supabase.auth.getUser();
+  if(user) {
+    console.log(user);
+  }
+}
+usuario()
 
-function sair() {
-  localStorage.removeItem("token");
-  localStorage.removeItem("userLogado");
-  window.location.href = "./login.html";
+
+
+async function sair(){
+  const { error } = await _supabase.auth.signOut()
+  if(error){
+  console.log(error);
+  }
+  else{
+    console.log('saindo do ifpa repo')
+    setTimeout(() => {
+      window.location.href = 'login.html'
+    }, 10000)
+  }
 }
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 async function getlista() {
 
