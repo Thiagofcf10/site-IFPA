@@ -37,12 +37,32 @@
         width: 150px;
 
     }
+    .corpo{
+        padding-bottom: 30px;
+    }
+    .corpo img {
+       border: 20px 3 solid;
+       border-radius: 5px;
+       background-color: #ffffff;
+    }
 
-    .corpo h1 {
-        font-size: 200%;
-        text-align: center;
-        padding: 15%;
 
+    .dados_user label{
+        font-size: 100%;
+        display:flex;
+        background-color: #ffffff;
+        color: black;
+
+    }
+    button {
+        height: 40px;
+        font-size: 150%;
+        color: #003C00;
+        background-color: #ffffff;
+        border: 10px 2 solid;
+        border-radius: 10px;
+        position: relative;
+        text-wrap: nowrap;
     }
 </style>
 
@@ -53,28 +73,36 @@
             <hi>Perfil do usuário</hi>
 
             <div class="corpo">
-                <div id="dados_user">
+                <img src="imagens/account_avatar_face_man_people_profile_user_icon_123197.svg">
+                <h3>Nome do usuario</h3>
 
-                    <h2>nome</h2>
-                    <div id="nome">
+                <div class="dados_user">
+                    
+                    <li id="nome">
+                        <label>nome</label>
+    
+                    </li>
+                    <li id="matricula">
+                        <label>matricula</label>
+                    
+                    </li>
+                    <li id="curso">
+                        <label>curso</label>
+
+                    </li>
+                    <li id="turma">
+                        <label>turma</label>
                         
-                    </div>
-                    <h2>matricula</h2>
-                    <p id="matricula">
-                        <label for="matricula"></label>
-                    <h2>curso</h2>
-                    <p id="curso">
-                        <label for="curso"></label>
-                    <h2>turma</h2>
-                    <p id="turma">
-                        <label for="turma"></label>
-                    </p>
+                    </li>
+                   </div>
+
                 </div>
 
-
-
-
             </div>
+            <button type="button" >adicionar projeto</button><br>
+            <button>Meus projetos</button><br>
+            <button>Editar perfil</button><br>
+            <button>Sair do conta</button><br>
 
         </div>
     </header>

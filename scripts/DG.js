@@ -4,7 +4,7 @@ const _supabase = supabase.createClient(supabaseUrl, supabaseKey)
 
 
 const dados = document.querySelector('dados_user');
-const nome = document.getElementById('nome');
+const nome = document.getElementById('');
 const matricula = document.querySelector('matricula');
 const curso = document.querySelector('curso');
 const turma = document.querySelector('turma');
@@ -15,7 +15,6 @@ async function infouser() {
   const { data, error } = await _supabase
     .from('alunos')
     .select('*')
-  console.log(data)
   
   return data;
 
@@ -42,3 +41,7 @@ async function li() {
   });
 }
 li()
+
+
+
+

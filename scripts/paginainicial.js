@@ -13,10 +13,17 @@ const todaslista = document.querySelector("#todaslista");
 //condição para a tela de login
 
 async function loginuser(){
-  const localuser = await _supabase.auth.getSession();
-  console.log(localuser);
 
-  if (localuser == null){
+  const {data, error} = await _supabase.auth.getSession({ Object:{options: {
+    data: {user
+
+    }
+  }}});
+
+
+
+
+  if (d = false){
     alert("faça login");
     setTimeout(() => {
       window.location.href = 'login.html'
@@ -26,6 +33,8 @@ async function loginuser(){
   else{
     alert("bem-vindo")
   }
+
+  console.log(session);
 
 }
 
