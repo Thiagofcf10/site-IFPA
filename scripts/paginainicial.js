@@ -14,28 +14,9 @@ const todaslista = document.querySelector("#todaslista");
 
 async function loginuser(){
 
-  const {data, error} = await _supabase.auth.getSession({ Object:{options: {
-    data: {user
-
-    }
-  }}});
-
-
-
-
-  if (d = false){
-    alert("faça login");
-    setTimeout(() => {
-      window.location.href = 'login.html'
-    }, 1000)
-
-  } 
-  else{
-    alert("bem-vindo")
-  }
-
-  console.log(session);
-
+  const {data } = await _supabase.auth.getSession()
+    
+  console.log(data)
 }
 
 loginuser()
