@@ -95,7 +95,7 @@
 
     }
 
-    .filtros {
+    .Dados {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 110%;
         color: #003C00;
@@ -106,7 +106,7 @@
         display: block;
     }
 
-    .corpo {
+    .main {
         padding: 5%;
         padding-right: 25%;
         padding-top: 0.5%;
@@ -114,16 +114,12 @@
 
     }
 
-    .MT li {
-        background-color: #003C00;
-        height: 10px;
-        width: 50px;
-    }
-    .filtros label {
+
+    .Dados label {
         margin-right: 1%;
     }
 
-    .filtros input {
+    .Dados input {
         background-color: azure;
         border-radius: 9px;
         padding: 0.4%;
@@ -144,24 +140,11 @@
         padding-right: 49%;
         padding-left: 1% ;
         padding-bottom: 6%;
-
-        
-    }
-    #detalhes {
-        background-color: azure;
-        border-radius: 9px;
-        padding: 0.4%;
-        border: 3px solid #003C00;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-right: 49%;
-        padding-left: 1% ;
-        padding-bottom: 10%;
-
-        
     }
 
 
-    .filtros select {
+
+    .Dados select {
         background-color: azure;
         border-radius: 9px;
         padding: 0.4%;
@@ -169,12 +152,37 @@
         border: 3px solid #003C00;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .filtros button {
-        margin-right: 25%;
+
+
+
+    .custos {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 110%;
+        color: #003C00;
+        line-height: 40px;
+        width: 100%;
+        text-align:right;
+        padding: 1%;
+        display: block;
+        background-color: #9cda9c;
     }
-    #tipo {
-        margin-right: 47.5%;
+
+    .custos label {
+        margin-right: 1%;
     }
+
+    .custos input {
+        background-color: azure;
+        border-radius: 9px;
+        padding: 0.4%;
+        border: 3px solid #003C00;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-right: 49%;
+        padding-left: 1% ;
+
+        
+    }
+
     
 </style>
 
@@ -199,36 +207,55 @@
         </nav>
     </div>
 
-    <div class="corpo">
+    <div class="main">
 
-        <div class="filtros">
+        <div class="Dados">
             <form method="post" id="add">
                 <label> Nome do projeto </label>
                 <input type="text" id="nome">
                 <br>
-                <label> Tipo do projeto </label>
+                <label> Curso </label>
                 <input type="text" id="tipop">
                 <br>
-                <label> Area academica </label>
+                <label> Turma </label>
                 <input type="text" id="area">
                 <br>
                 <label> Orientador </label>
                 <input type="text" id="orientador">
                 <br>
+                <label> Corientador </label>
+                <input type="text" id="orientador">
+                <br>
                 <label> Alunos participantes </label>
                 <input type="text" id="aluno">
                 <br>
-                <label> Detalhes do projeto </label>
-                <input type="text" id="detalhes">
-                <br>
-
-                <br>
-    
-    
-                <button onclick="" type="submit" name="Adicionar projeto" >Adicionar projeto</button>
-
             </form>
         </div>
+        <div class="custos">
+            <form method="post" id="add">
+                <label> Equipamentos Necessários(Máquinas e Acessórios) </label>
+                <input type="text" id="nome">
+                <br>
+                <label> Nomes dos Equipamentos </label>
+                <input type="text" id="tipop">
+                <br>
+                <label> Insumos Necessários </label>
+                <input type="text" id="area">
+                <br>
+                <label> Custo Total do Projeto </label>
+                <input type="text" id="orientador">
+                <br>
+                <label> Corientador </label>
+                <input type="text" id="orientador">
+                <br>
+                <label> Alunos participantes </label>
+                <input type="text" id="a">
+                <br>
+            </form>
+
+        </div>
+
+        <button onclick="" type="submit" name="Adicionar projeto" >Adicionar projeto</button>
         </div>
 
 
