@@ -187,12 +187,14 @@
                 <label for="nomeU">nome completo</label>
                 <input type="text" id="nomeU" name="nomeU" required>
                 <br>
-                <label for="m">matricula</label>
-                <input type="number" id="matriculaA" name="m" required>
-                <br><label for="c">curso</label>
-                <input type="text" id="cursoA" name="c" required>
-                <br><label for="t">turma</label>
-                <input type="text" id="turmaA" name="t" required>
+                <label for="matricula">matricula</label>
+                <input type="number" id="matricula" name="m" required>
+
+                <br><label for="curso">curso</label>
+                <select id="curso"> <option value="">Selecione o curso</option> </select>
+                
+                <br><label for="turma">turma</label>
+                <select id="turma"> <option value="">Selecione a Turma</option> </select>
                 <br>
                 <label for="emailC">Email</label>
                 <input type="email" id="emailC" name="emailC" required>
@@ -201,16 +203,7 @@
                 <input type="password" id="senha" name="senha" required>
                 <br>
 
-                <!--             <select>
-                    <option> 1  </option>
-                    <option> 2  </option>
-                    <option> 3  </option>
-                </select>
-            -->
-
-
-
-                <button type="button" onclick="cadastro(), dadosP()">login</button>
+                <button type="button" onclick="cadastro(), dadosP() , dadosPS()">login</button>
             </form>
         </div>
     </div>

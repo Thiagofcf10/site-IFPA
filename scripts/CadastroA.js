@@ -48,24 +48,53 @@ async function cadastro() {
   }
 }
 
-async function dadosP() {
-  
+async function dadosP(emailC, nomeU, matriculaA) {
 
-const {data, error:profileError } = await _supabase.from('alunos').insert(
-  [{  email: emailC.value,
+
+  const { data, error } = await _supabase.from('alunos').insert(
+    [{
+      email: emailC.value,
       nome_aluno: nomeU.value,
       matricula: matriculaA.value,
-      curso: cursoA.value,
-      turma: turmaA.value, }]);
- 
-if (profileError){
-  alert("algo deu errado");
-  throw profileError;}
+    }]);
+
+  if (error) {
+    alert("algo deu errado");
+    throw profileError;
+  }
 
   else {
     throw data;
+  }
 }
 
 
+async function dadosPS() {
+  const { data, error } = await _supabase
+    .from('alunos')
+    .select('*');
+
+  if (error) {
+    console.error('Erro ao buscar idades:', error);
+    return;
+  }
+
+  turs.forEach(tur => {
+    const option = document.createElement('option');
+    option.value = turma;
+    option.textContent = tur.tur_value;
+    turmaA.appendChild(option);
+  });
+
+  curs.forEach(cur => {
+    const option = document.createElement('option');
+    option.value = curso;
+    option.textContent = cur.cur_value;
+    cursoA.appendChild(option);
+  });
 }
+
+
+
+
 
