@@ -5,118 +5,91 @@
     <meta charset="UTF-8">
     <meta nome="viewport" content="width=devide-width, initial-scale=1.0, maximun-scale=1.0">
     <title>IFPA repositorios</title>
-    <link rel="estilo" href="estilo.css" >
+    <link rel="estilo" href="estilo.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-
-
 </head>
 <style src="estilo.css">
     body {
         background-color: rgb(255, 255, 255);
         margin: 0%;
         padding: 0%;
-
-    }
-
-    .titulo h1 {
         text-align: center;
-        background-color: green;
-        border-radius: 10px;
+
     }
+
+    header {
+        width: 100%;
+        height: 23vh;
+        margin: 0;
+        background-color: #003C00;
+        
+    }
+
+    header img {
+        height: 180px;
+        width: 190px;
+    }
+
+    header ul {
+        list-style-type: none;
+        align-content: space-between;
+        display: inline-flex;
+
+    }
+
+    header h1 {
+        font-size: 40px;
+        color: aliceblue;
+        margin: 0;
+    }
+
+    header a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 26px;
+    }
+
+    header li{
+        margin-inline: 4vw;
+    }
+
 
     button {
-        position: relative;
+
         height: 80px;
-        width: auto;
         border-radius: 10px;
         background-color: rgb(65, 35, 175);
         color: aliceblue;
         width: 250px;
-        margin-top: 4%;
+        margin-top: 4vh;
+
 
     }
 
-    .titulo {
-        padding: auto;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 250%;
-        color: aliceblue;
+    #add {
         text-align: center;
-        background-color: #003C00;
-        border-radius: 0px;
-        padding-bottom: 1%;
     }
 
-    .titulo img {
-        height: 130px;
-        width: 150px;
-
-    }
-
-    .menus {
-        background-color: #003C00;
-
-    }
-
-    .menus a {
-        font-size: 110%;
-        padding: 7%;
-        margin: auto;
-        color: rgb(23, 6, 83);
-        font-family: Arial;
-        background-color: rgb(255, 255, 255);
-        border-radius: 5px;
-        text-decoration: none;
-        text-wrap: nowrap;
-        font-weight: bold;
-
-    }
-
-    .menus a:hover {
-        background-color: rgb(65, 35, 175);
-        color: aliceblue;
-
-    }
-
-    .menus ul {
-        margin-top: 0%;
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        margin-left: 15%;
-        margin-right: 15%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        margin-inline: auto;
-        max-inline-size: 60%;
-        min-inline-size: 40%;
-
-
-    }
 
     .Dados {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 110%;
         color: #003C00;
-        line-height: 40px;
-        width: 100%;
-        text-align:right;
-        padding: 1%;
+        line-height: 60px;
+        padding: 2%;
         display: block;
-    }
+        margin-bottom: 5vh;
 
-    .main {
-        padding: 5%;
-        padding-right: 25%;
-        padding-top: 0.5%;
-        text-wrap: nowrap;
 
     }
 
 
     .Dados label {
-        margin-right: 1%;
+        width: 9vw;
+        text-align: left;
+        display: inline-block;
+        text-wrap: nowrap;
+        margin-right: 9vw;
     }
 
     .Dados input {
@@ -125,32 +98,27 @@
         padding: 0.4%;
         border: 3px solid #003C00;
         font-family: Arial, Helvetica, sans-serif;
-        padding-right: 49%;
-        padding-left: 1% ;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        padding-right: 20vw;
 
-        
     }
 
-    #aluno {
-        background-color: azure;
-        border-radius: 9px;
-        padding: 0.4%;
-        border: 3px solid #003C00;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-right: 49%;
-        padding-left: 1% ;
-        padding-bottom: 6%;
+    #aluno label {
+        width: 9vw;
+        text-align: left;
+        display: inline-block;
+
     }
 
-
-
-    .Dados select {
+    #aluno input {
         background-color: azure;
         border-radius: 9px;
-        padding: 0.4%;
-        padding-right:47.5%;
         border: 3px solid #003C00;
         font-family: Arial, Helvetica, sans-serif;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        padding-right: 20vw;
     }
 
 
@@ -159,108 +127,134 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 110%;
         color: #003C00;
-        line-height: 40px;
-        width: 100%;
-        text-align:right;
-        padding: 1%;
-        display: block;
+        line-height: 60px;
         background-color: #9cda9c;
+        margin-left: 0;
+
     }
 
     .custos label {
-        margin-right: 1%;
+        width: 9vw;
+        text-align: left;
+        display: inline-block;
+        text-wrap: nowrap;
+        margin-right: 9vw;
     }
 
     .custos input {
+        padding: 0.4%;
         background-color: azure;
         border-radius: 9px;
-        padding: 0.4%;
         border: 3px solid #003C00;
         font-family: Arial, Helvetica, sans-serif;
-        padding-right: 49%;
-        padding-left: 1% ;
+        padding-right: 10vw;
 
-        
     }
 
-    
+    .QVI {
+        padding-top: 0.4%;
+        padding-bottom: 0.4%;
+        padding-right: 3px;
+        background-color: azure;
+        border-radius: 9px;
+        border: 3px solid #003C00;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    footer {
+
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        height: 31vh;
+        background-color: #003C00;
+        color: aliceblue;
+
+
+    }
 </style>
 
 <body>
     <header>
-        <div class="titulo">
-            <img src="imagens/ifpaoficial.jpg">
-            <hi>Cadastro de projetos</hi>
-            <div>
 
-            </div>
+        <img src="imagens/ifpaoficial.jpg">
+        <h1>Cadastro de projetos</h1>
+
+        <div class="barranav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"> Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Contato.html">Contato </a>
+                    </li>
+                    <li>
+                        <a href="Sobre.html"> Sobre </a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
+
     </header>
 
-    <div class="menus">
-        <nav>
-            <ul>
-                <li>
-                    <a href="perfil.html"> </a>
-                </li>
-            </ul>
-        </nav>
+    <div class="Dados">
+        <form method="post" id="add">
+            <label> Nome do projeto </label>
+            <input type="text" id="nome">
+            <br>
+            <label> Curso </label>
+            <input type="text" id="tipop">
+            <br>
+            <label> Turma </label>
+            <input type="text" id="area">
+            <br>
+            <label> Orientador </label>
+            <input type="text" id="orientador">
+            <br>
+            <label> Corientador </label>
+            <input type="text" id="orientador">
+            <br>
+            <label> Alunos participantes </label>
+            <input type="text" id="aluno">
+            <br>
+        </form>
     </div>
 
-    <div class="main">
 
-        <div class="Dados">
-            <form method="post" id="add">
-                <label> Nome do projeto </label>
-                <input type="text" id="nome">
-                <br>
-                <label> Curso </label>
-                <input type="text" id="tipop">
-                <br>
-                <label> Turma </label>
-                <input type="text" id="area">
-                <br>
-                <label> Orientador </label>
-                <input type="text" id="orientador">
-                <br>
-                <label> Corientador </label>
-                <input type="text" id="orientador">
-                <br>
-                <label> Alunos participantes </label>
-                <input type="text" id="aluno">
-                <br>
-            </form>
-        </div>
-        <div class="custos">
-            <form method="post" id="add">
-                <label> Equipamentos Necessários(Máquinas e Acessórios) </label>
-                <input type="text" id="nome">
-                <br>
-                <label> Nomes dos Equipamentos </label>
-                <input type="text" id="tipop">
-                <br>
-                <label> Insumos Necessários </label>
-                <input type="text" id="area">
-                <br>
-                <label> Custo Total do Projeto </label>
-                <input type="text" id="orientador">
-                <br>
-                <label> Corientador </label>
-                <input type="text" id="orientador">
-                <br>
-                <label> Alunos participantes </label>
-                <input type="text" id="a">
-                <br>
-            </form>
+    <div class="custos">
+        <form method="post" id="add">
+            <label> Equipamentos Necessários </label>
+            <input type="text" id="nome">
+            <input type="text" placeholder="Quantidade/hora" class="QVI">
+            <br>
+            <label> Insumos Necessários </label>
+            <input type="text" placeholder="Item" >
+            <input type="text" placeholder="Quantidade" class="QVI">
+            <input type="text" placeholder="Valor unitario" class="QVI">
+            <input type="text" placeholder="Valor total" class="QVI">
+            <br>
+            <label> Custo Total do Projeto </label>
+            <input type="text" id="orientador"  placeholder="Total">
+            <br>
+
+        </form>
+
+    </div>
+
+    <button onclick="" type="submit" name="Adicionar projeto">Adicionar projeto</button>
+
+    <footer>
+        <div>
+            <h2> Repositorio de pre-projetos do ifpa - desenvolvido por Thiago Felipe e Marley roberto </h2>
 
         </div>
+    </footer>
 
-        <button onclick="" type="submit" name="Adicionar projeto" >Adicionar projeto</button>
-        </div>
-
-
-
-<script src="scripts/add-projetos.js"></script>
+    <script src="scripts/add-projetos.js"></script>
 
 
 
