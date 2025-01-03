@@ -17,7 +17,6 @@ async function getlista(){
   .select('*')
   console.log(data)
 
-
   return data
 }
 

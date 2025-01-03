@@ -17,6 +17,7 @@ const cursoA = document.getElementById('curso');
 const turmaA = document.getElementById('turma');
 
 
+
 async function cadastro() {
 
   const _supabase = supabase.createClient(supabaseUrl, supabaseKey)
@@ -48,24 +49,29 @@ async function cadastro() {
   }
 }
 
+
 async function dadosP() {
   
-
-const {data, error:profileError } = await _supabase.from('alunos').insert(
-  [{  email: emailC.value,
+const {data, error} = await _supabase.from('alunos').insert(
+  {  email: emailC.value,
       nome_aluno: nomeU.value,
       matricula: matriculaA.value,
       curso: cursoA.value,
-      turma: turmaA.value, }]);
+      turma: turmaA.value, });
  
-if (profileError){
+if (error){
   alert("algo deu errado");
-  throw profileError;}
+  throw error;}
 
   else {
-    throw data;
+    console.log(data);
+    alert('sucesso')
 }
 
 
 }
+
+
+
+
 
