@@ -52,26 +52,22 @@ async function cadastro() {
 
 async function dadosP() {
   
-const {data, error} = await _supabase.from('alunos').insert(
-  {  email: emailC.value,
+
+const {data, error:profileError } = await _supabase.from('alunos').insert(
+  [{  email: emailC.value,
       nome_aluno: nomeU.value,
       matricula: matriculaA.value,
       curso: cursoA.value,
-      turma: turmaA.value, });
+      turma: turmaA.value, }]);
  
-if (error){
+if (profileError){
   alert("algo deu errado");
-  throw error;}
+  throw profileError;}
 
   else {
-    console.log(data);
-    alert('sucesso')
+    throw data;
 }
 
 
 }
-
-
-
-
 

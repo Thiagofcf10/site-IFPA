@@ -11,13 +11,14 @@
 
 
 </head>
-<style src="estilo.css">
+<style >
     body {
         background-color: rgb(255, 255, 255);
         margin: 0;
         padding: 0;
         height: 100%;
         width: 100%;
+        text-align: center;
 
     }
 
@@ -26,57 +27,41 @@
         height: 20vh;
         margin: 0;
         background-color: #003C00;
+        
+    }
 
-
-
+    header img {
+        height: 6vh;
+        width: 6vw;
     }
 
     header ul {
-        margin-top: 3vh;
-        display: flex;
         list-style-type: none;
+        align-content: space-between;
+        display: inline-flex;
 
+    }
+
+    header h1 {
+        font-size: 40px;
+        color: aliceblue;
+        margin: 0;
     }
 
     header a {
         text-decoration: none;
         color: aliceblue;
-        font-size: 30px;
+        font-size: 26px;
     }
 
-    header li {
-        margin-left: 18vw;
-        padding-left: 5vw;
+    header li{
+        margin-inline: 4vw;
     }
 
-
-
-
-    .titulo {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-bottom: 10vh;
-        padding-top: 40px;
-        text-align: center;
-        background-color: #003C00;
-    }
-
-    .titulo h1 {
-        text-align: center;
-        font-size: 45px;
-        color: aliceblue;
-
-
-    }
-
-    .titulo img {
-        height: 8vh;
-        width: 205px;
-
-
-    }
 
     .menus {
         background-color: #003C00;
+        height: 12vh;
 
     }
 
@@ -104,11 +89,13 @@
     }
 
     .menus li {
-        padding: 20px;
+        padding: 1%;
         color: rgb(23, 6, 83);
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
-        margin-left: 6vw;
+        margin-left: 2vw;
+        margin-right:2vw;
+        
 
     }
 
@@ -120,10 +107,11 @@
 
     .menus ul {
         margin-top: 0;
-        padding-top: 20px;
-        display: flex;
+        display:flex;
         list-style-type: none;
-        margin-left: 5vw;
+        text-align: center;
+
+       
     }
 
 
@@ -254,6 +242,7 @@
             <h1>IFPA Repositorio De Trabalhos Academicos</h1>
 
         
+            <div class="barranav">
                 <nav>
                     <ul>
                         <li>
